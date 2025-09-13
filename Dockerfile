@@ -29,7 +29,7 @@ WORKDIR /app
 COPY --from=build /app/build ./build
 
 # Copy environment file
-COPY env.production .env
+COPY .env .env
 
 # Expose port
 EXPOSE 3000
